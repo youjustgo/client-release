@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>You Just Go</title>
+  <!--<script type="text/javascript">
+
+var appInsights=window.appInsights||function(config){    function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t    }({        instrumentationKey:"5a7a4f59-850b-4c9c-96b4-5f627b495104"    });
+
+  window.appInsights=appInsights;
+  //appInsights.trackPageView();
+
+</script>-->
+  <base href="/zh/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/img/favicon.png" sizes="32x32" />
+
+<link href="styles.c940e7e4cc1a52f42231.bundle.css" rel="stylesheet"/></head>
+<body>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-82855235-1', 'auto');
+
+
+  </script>
+  <style type="text/css">
+    .loading-logo {
+      max-width: 40%;
+      max-height: 40%;
+    }
+  </style>
+  <client-app id="yjg" style="width: 100vh;height: 100vh;">
+    <div style="height: 100vh; width: 100%; display:table;">
+      <div style="display:table-cell; vertical-align: middle;">
+        <img src="/img/loading-en.svg" class="loading-logo" alt="You Just Go" style="display: none;margin: 0 auto;" id="loading-image-en"/>
+        <img src="/img/loading-zh.svg" class="loading-logo" alt="You Just Go" style="display: none;margin: 0 auto;" id="loading-image-zh"/>
+
+        <script type="text/javascript">
+          let bases = document.getElementsByTagName('base');
+          let baseHref = null;
+
+          if (bases.length > 0) {
+              baseHref = bases[0].href;
+          }
+          let language = baseHref.split('/')[baseHref.split('/').length -2];
+
+
+          switch (language.toUpperCase()) {
+              case "EN":
+                  window.localStorage.setItem('iso-language', 'en-US');
+                  document.getElementById('loading-image-en').style.display = "block";
+                  break;
+              case "ZH" :
+                  window.localStorage.setItem('iso-language', 'zh-CN');
+                  document.getElementById('loading-image-zh').style.display = "block";
+                  break;
+          }
+        </script>
+      </div>
+    </div>
+  </client-app>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.28.0/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.0.2/mapbox-gl-directions.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.0.2/mapbox-gl-directions.css' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="https://npmcdn.com/angular2-toaster@2.0.0/toaster.css" />
+<script type="text/javascript" src="inline.7b048de1e43d5ad92c26.bundle.js"></script><script type="text/javascript" src="scripts.d7ee232007c87f201253.bundle.js"></script><script type="text/javascript" src="vendor.71e084631a4f54d85776.bundle.js"></script><script type="text/javascript" src="main.3d7941c4bd6cdc19078c.bundle.js"></script></body>
+</html>

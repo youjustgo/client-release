@@ -1,0 +1,19 @@
+<html>
+<head>
+  <script type="text/javascript">
+    var isoLanguage = window.localStorage.getItem('iso-language') || 'en-US';
+    var language = 'en';
+    switch (isoLanguage.toUpperCase()) {
+        case "EN-US":
+          language = 'en';
+          break;
+        case "ZH-CN" :
+            language = 'zh';
+            break;
+    }
+    window.location.href = '/' + language;
+  </script>
+</head>
+<body>
+</body>
+</html>
